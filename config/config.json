@@ -1,0 +1,14 @@
+{
+  "service": "http",
+  "http": {
+    "port": 3000
+  },
+  "mqtt": {
+    "url": "mqtt://192.168.10.2",
+    "port": 1883,
+    "topic": "homeassistant",
+    "username": "your-username",
+    "password": "your-password",
+  },
+  "debug": false
+}
