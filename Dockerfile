@@ -9,6 +9,7 @@ ENV MQTT_PORT="1883"
 ENV MQTT_USER="user"
 ENV MQTT_PASS="pass"
 ENV MQTT_TOPIC="homeassistant"
+ENV DEBUG="false"
 
 # set working directory
 WORKDIR /usr/src/app
