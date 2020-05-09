@@ -1,13 +1,12 @@
 {
   "mac1" : "02:FB:76:C0:7B:5E",
-  "mac2" : ""
+  "mac2" : "",
   "service": "http",
   "http": {
     "port": 3000
   },
   "mqtt": {
-    "url": "mqtt://192.168.10.2",
-    "port": 1883,
+    "broker_url": "mqtt://192.168.10.2",
     "topic": "homeassistant",
     "username": "your-username",
     "password": "your-password"
