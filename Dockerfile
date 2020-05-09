@@ -14,6 +14,8 @@ RUN \
   apt-get update && \
   apt-get install jq -y && \
   npm install && \
+  mkdir /config && \
+  cp ./config/config.json /config && \
   chmod +x run.sh
 
 CMD [ "./run.sh" ]
