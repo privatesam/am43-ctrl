@@ -20,15 +20,15 @@ See /config/config.json
 
 ```json
 {
-  "mac1" : "02:FB:76:C0:7B:5E",             // mac address of 1st blind controller
-  "mac2" : "",                              // mac address of 2st blind controller
-  "service": "http",                        // service: http, mqtt or both (http+mqtt)
+  "mac1" : "02:FB:76:C0:7B:5E",
+  "mac2" : "",
+  "service": "http",
   "http": {
-    "port": 3000                            // http service port
+    "port": 3000
   },
   "mqtt": {
-    "broker_url": "mqtt://192.168.10.2",    // mqtt broker url
-    "topic": "homeassistant",               // topic for mqtt
+    "broker_url": "mqtt://192.168.10.2",
+    "topic": "homeassistant",
     "username": "your-username",            // username for authorizing mqtt
     "password": "your-password"             // password for authorizing mqtt (do not use special chars)
   },
@@ -36,7 +36,15 @@ See /config/config.json
 }
 ```
 
-* `-v /config` - mac address of 1st blind controller
+* `mac1` - mac address of 1st blind controller, empty string("") is ok.
+* `mac2` - mac address of 2st blind controller, empty string("") is ok.
+* `service` - http, mqtt or both (http+mqtt)
+* `http.port` - http service port
+* `mqtt.broker_url` - broker url of your mosquitto server
+* `mqtt.topic` - base topic for mosquitto
+* `mqtt.username` - username for authorizing mosquitto
+* `mqtt.password` - password for authorizing mosquitto
+* `debug` - enable/disable debug logging
 
 ## References
 * Base image: [node:12](https://hub.docker.com/_/node/)
