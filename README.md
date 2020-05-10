@@ -16,6 +16,8 @@ docker create \
 * `-v /config` - options for your blind controller
 
 ## Options
+See /config/config.json
+
 ```json
 {
   "mac1" : "02:FB:76:C0:7B:5E",             // mac address of 1st blind controller
@@ -33,6 +35,8 @@ docker create \
   "debug": false                            // enable/disable debug log
 }
 ```
+
+* `-v /config` - mac address of 1st blind controller
 
 ## References
 * Base image: [node:12](https://hub.docker.com/_/node/)
