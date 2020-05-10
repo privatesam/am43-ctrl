@@ -29,10 +29,10 @@ See /config/config.json
   "mqtt": {
     "broker_url": "mqtt://192.168.10.2",
     "topic": "homeassistant",
-    "username": "your-username",            // username for authorizing mqtt
-    "password": "your-password"             // password for authorizing mqtt (do not use special chars)
+    "username": "your-username",
+    "password": "your-password"
   },
-  "debug": false                            // enable/disable debug log
+  "debug": false
 }
 ```
 
