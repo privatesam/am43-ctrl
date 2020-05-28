@@ -9,7 +9,7 @@ COPY . .
 # run
 RUN \
   apt-get update && \
-  apt-get install jq -y && \
+  apt-get install jq libudev-dev -y && \
   npm install && \
   chmod +x run.sh
 
