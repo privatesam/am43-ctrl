@@ -1,4 +1,4 @@
-FROM node:12
+FROM arm32v7/node:12-stretch
 
 # set working directory
 WORKDIR /usr/src/app
@@ -17,3 +17,4 @@ CMD [ "./run.sh" ]
 
 # ports and volumes
 VOLUME /config
+
